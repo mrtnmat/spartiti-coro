@@ -23,7 +23,6 @@ Soprano = \relative {
       { f4 r c }
       { \partial 2 f4 r }
     }
-    
   }
 }
 SopranoLyrics = \lyricmode {
@@ -43,7 +42,11 @@ Alto = \relative {
     a a8 a a a | bf bf bf bf bf bf |
     c c c c c c | a a a4 \breathe c |
     a a8 a a a | bf bf bf bf bf bf |
-    c c c c c c | a4 r c |
+    c c c c c c |
+    \alternative {
+      { a4 r c }
+      { \partial 2 a4 r }
+    }
   }
 }
 AltoLyrics = \lyricmode {}
@@ -51,10 +54,14 @@ Tenore = \relative {
   \clef "bass"
   r4 |
   \repeat volta 2 {
-    c'2. | c2. |
-    c2. | c2. |
-    c2. | c2. |
-    c2. | c2. |
+    c'2. | c |
+    c | c |
+    c | c |
+    c |
+    \alternative {
+      { c }
+      { \partial 2 c4 r }
+    }
   }
 }
 TenoreLyrics = \lyricmode {}
@@ -65,7 +72,11 @@ Basso = \relative {
     f8 f f4 f | c8 c c4 c |
     c c c | f f8 f f f |
     f f f4 f | c8 c c4 c |
-    c c c | f8 f f f f f |
+    c c c | 
+    \alternative {
+      { f8 f f f f f }
+      { \partial 2 f8 f f4 }
+    }
   }
 }
 BassoLyrics = \lyricmode {}
