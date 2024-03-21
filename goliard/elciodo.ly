@@ -34,7 +34,12 @@ Alto = \relative {
 }
 AltoLyrics = \lyricmode {}
 Tenore = \relative {
-  d''4 g, a e8 e | fs g a c d2
+  \clef "bass"
+  r |
+  c'2. | c2. |
+  c2. | c2. |
+  c2. | c2. |
+  c2. | c2. |
 }
 TenoreLyrics = \lyricmode {}
 Basso = \relative {
