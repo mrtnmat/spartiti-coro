@@ -14,42 +14,59 @@ global = {
 
 Soprano = \relative {
   c'4 |
-  f f8 g a f | g4 g8 a bf g |
-  e e e e d e | f f f4 \breathe c4 |
-  f f8 g a f | g4 g8 a bf g |
-  e e e e d e | f4 r c
+  \repeat volta 2 {
+    f f8 g a f | g4 g8 a bf g |
+    e e e e d e | f f f4 \breathe c4 |
+    f f8 g a f | g4 g8 a bf g |
+    e e e e d e |
+    \alternative {
+      { f4 r c }
+      { \partial 2 f4 r }
+    }
+    
+  }
 }
 SopranoLyrics = \lyricmode {
   El |
   cio -- do del fe -- ro | ve -- cio de la me -- |
   ca -- ni -- ca, de -- la -- me | ca -- ni -- ca, el |
   cio -- do del fe -- ro | ve -- cio de la me -- |
-  ca -- ni -- ca de pre -- ci -- | sion el |
+  ca -- ni -- ca de pre -- ci -- |
+  \alternative {
+    \volta 1 { sion el }
+    \volta 2 { sion }
+  }
 }
 Alto = \relative {
   c''4 |
-  a a8 a a a | bf bf bf bf bf bf |
-  c c c c c c | a a a4 \breathe c |
-  a a8 a a a | bf bf bf bf bf bf |
-  c c c c c c | a4 r c |
+  \repeat volta 2 {
+    a a8 a a a | bf bf bf bf bf bf |
+    c c c c c c | a a a4 \breathe c |
+    a a8 a a a | bf bf bf bf bf bf |
+    c c c c c c | a4 r c |
+  }
 }
 AltoLyrics = \lyricmode {}
 Tenore = \relative {
   \clef "bass"
   r4 |
-  c'2. | c2. |
-  c2. | c2. |
-  c2. | c2. |
-  c2. | c2. |
+  \repeat volta 2 {
+    c'2. | c2. |
+    c2. | c2. |
+    c2. | c2. |
+    c2. | c2. |
+  }
 }
 TenoreLyrics = \lyricmode {}
 Basso = \relative {
   \clef "bass"
   r4 |
-  f8 f f4 f | c8 c c4 c |
-  c c c | f f8 f f f |
-  f f f4 f | c8 c c4 c |
-  c c c | f8 f f f f f |
+  \repeat volta 2 {
+    f8 f f4 f | c8 c c4 c |
+    c c c | f f8 f f f |
+    f f f4 f | c8 c c4 c |
+    c c c | f8 f f f f f |
+  }
 }
 BassoLyrics = \lyricmode {}
 
