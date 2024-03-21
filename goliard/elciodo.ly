@@ -15,8 +15,9 @@ global = {
 Soprano = \relative {
   c'4 |
   f f8 g a f | g4 g8 a bf g |
-  e e e e d e | f f f4 c4 |
-  f f8 g a f | g4 g8 a bf g | e e e e d e | f4 r c
+  e e e e d e | f f f4 \breathe c4 |
+  f f8 g a f | g4 g8 a bf g |
+  e e e e d e | f4 r c
 }
 SopranoLyrics = \lyricmode {
   El |
@@ -28,7 +29,7 @@ SopranoLyrics = \lyricmode {
 Alto = \relative {
   c''4 |
   a a8 a a a | bf bf bf bf bf bf |
-  c c c c c c | a a a4 c |
+  c c c c c c | a a a4 \breathe c |
   a a8 a a a | bf bf bf bf bf bf |
   c c c c c c | a4 r c |
 }
