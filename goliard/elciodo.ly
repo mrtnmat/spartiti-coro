@@ -16,8 +16,7 @@ Soprano = \relative {
   c' |
   f f8 g a f | g4 g8 a bf g |
   e e e e d e | f f f4 c4 |
-  f f8 g a f | g4 g8 a bf g |
-  e e e e d e | f4 r c
+  f f8 g a f | g4 g8 a bf g | e e e e d e | f4 r c
 }
 SopranoLyrics = \lyricmode {
   El |
@@ -27,7 +26,11 @@ SopranoLyrics = \lyricmode {
   ca -- ni -- ca de pre -- ci -- | sion el |
 }
 Alto = \relative {
-  c''
+  c'' |
+  a a8 a a a | bf bf bf bf bf bf |
+  c c c c c c | a a a4 c |
+  a a8 a a a | bf bf bf bf bf bf |
+  c c c c c c | a4 r c |
 }
 AltoLyrics = \lyricmode {}
 Tenore = \relative {
