@@ -49,7 +49,17 @@ Alto = \relative {
     }
   }
 }
-AltoLyrics = \lyricmode {}
+AltoLyrics = \lyricmode {
+  Oi |
+  be -- la me -- chi -- me | co -- mi -- ca, me -- chi -- me |
+  co -- mi -- ca, me -- chi -- me | co -- mi -- ca, oi |
+  be -- la me -- chi -- me | co -- mi -- ca, me -- chi -- me |
+  co -- mi -- ca, me -- chi -- me | 
+  \alternative {
+    \volta 1 { co, oi }
+    \volta 2 { co }
+  }
+}
 Tenore = \relative {
   \clef "bass"
   r4 |
@@ -64,7 +74,13 @@ Tenore = \relative {
     }
   }
 }
-TenoreLyrics = \lyricmode {}
+TenoreLyrics = \lyricmode {
+  zin | zin
+  zin | zin
+  zin | zin
+  zin | zin
+  zin
+}
 Basso = \relative {
   \clef "bass"
   r4 |
@@ -79,7 +95,16 @@ Basso = \relative {
     }
   }
 }
-BassoLyrics = \lyricmode {}
+BassoLyrics = \lyricmode {
+  to -- che toc toc | to -- che toc toc |
+  toc toc toc | toc to -- che to -- che |
+  to -- che toc toc | to -- che toc toc |
+  toc toc toc |
+    \alternative {
+      \volta 1 { to -- che to -- che to -- che | }
+      \volta 2 { to -- che toc }
+    }
+}
 
 MyChoir = \new ChoirStaff <<
   \new Voice = "SopranoVoice" << \global \Soprano >>
