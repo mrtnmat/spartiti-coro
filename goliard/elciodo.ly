@@ -13,7 +13,7 @@ global = {
 }
 
 Soprano = \relative {
-  c' |
+  c'4 |
   f f8 g a f | g4 g8 a bf g |
   e e e e d e | f f f4 c4 |
   f f8 g a f | g4 g8 a bf g | e e e e d e | f4 r c
@@ -26,7 +26,7 @@ SopranoLyrics = \lyricmode {
   ca -- ni -- ca de pre -- ci -- | sion el |
 }
 Alto = \relative {
-  c'' |
+  c''4 |
   a a8 a a a | bf bf bf bf bf bf |
   c c c c c c | a a a4 c |
   a a8 a a a | bf bf bf bf bf bf |
@@ -35,7 +35,7 @@ Alto = \relative {
 AltoLyrics = \lyricmode {}
 Tenore = \relative {
   \clef "bass"
-  r |
+  r4 |
   c'2. | c2. |
   c2. | c2. |
   c2. | c2. |
@@ -44,7 +44,11 @@ Tenore = \relative {
 TenoreLyrics = \lyricmode {}
 Basso = \relative {
   \clef "bass"
-  d'4 g, a e8 e | fs g a c d2
+  r4 |
+  f8 f f4 f | c8 c c4 c |
+  c c c | f f8 f f f |
+  f f f4 f | c8 c c4 c |
+  c c c | f8 f f f f f |
 }
 BassoLyrics = \lyricmode {}
 
