@@ -7,6 +7,7 @@ global = {
   \key d \minor
   \language "english"
   \time 3/4
+  \tempo 4 = 120
   \partial 4
   \set Timing.beamExceptions = #'()
   \set Timing.beatStructure = 1,1,1
@@ -121,5 +122,10 @@ MyChoir = \new ChoirStaff <<
   \score {
     \MyChoir
     \layout { }
+  }
+  \score {
+    \unfoldRepeats
+    \MyChoir
+    \midi { }
   }
 }
